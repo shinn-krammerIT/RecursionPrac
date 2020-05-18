@@ -1,4 +1,4 @@
-# RecursionPrac
+# Class Activity 
 SDV503 Class Activity May 19 2020 
 
 Instructions: 
@@ -25,7 +25,7 @@ e.	Provide pseudocodes, diagrams and executable code. (create a js file for exec
 
 ___
 
-Class Activity Task 1 - Data Structure <br /> 
+## Class Activity Task 1 - Data Structure <br /> 
 
 Data structures are a pivotal feature to frontend Javascript. The three main data structures are Array-like, node and hash function structures. 
 
@@ -60,7 +60,7 @@ etc | -> | etc
 
 ---
 
-Class Activity Task 2 - Linked Lists
+## Class Activity Task 2 - Linked Lists
 Linked Lists 
 
 Singly - Linked lists store data in a specific order depending on the direction the list is going (Head to Tail, Tail to Head). 
@@ -78,10 +78,52 @@ Creating a linked list is simple.
 The first thing to do would be to create a Node class object. 
 
 ```javascript
+// Node Object made
 class Node {
     constructor(data, next = null){
+        // Stored data key
         this.data = data;
+        // Next node link
         this.next = next;
     }
 }
 ```
+
+To do this manually you can assign a head of the list with an item using the node constructor
+
+```javascript
+let head = new Node("item1");
+```
+
+Creating new nodes to add to the list you simply assign an item to head.next
+
+```javascript
+head.next = new Node("item2");
+```
+
+However to add a third item it would be assigned to head.next.next
+```javascript
+head.next.next = new Node("item3");
+```
+
+So rather than manually typing out .next = new code we can create a new class called linked list that will include functions to add, insert, remove and delete. 
+
+```javascript
+class linkedList {
+    constructor ()
+    { 
+        this.head = null; 
+        this.size = 0; 
+    } 
+}
+```
+
+
+
+---
+
+## Class Activity Task 3 - Recursion
+
+Recursion takes a function and then calls itself until it says otherwise.
+Recursion is great when applied to factorials and recursive mathmatical formualas. It is also very good when searching through linked lists and trees. 
+
