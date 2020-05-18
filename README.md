@@ -23,33 +23,48 @@ c.	Which data structure stores you can Recursion algorithm?
 d.	 Provide Real world examples
 e.	Provide pseudocodes, diagrams and executable code. (create a js file for executable code)
 
-/* ---------------------------------------------------------------------------*/
+___
 
-Class Activity Task 1 - Data Structure
+Class Activity Task 1 - Data Structure <br /> 
 
 Data structures are a pivotal feature to frontend Javascript. The three main data structures are Array-like, node and hash function structures. 
 
-Array-like data structure:
+Array-like data structure: <br /> 
 Array-like data structures splits into 2 types. Stacks and Queues. 
-A stack being known as a FILO (First In Last Out) structure and a Queue being known as the FIFO (First In First Out) structure. 
-Queue
-First In............................Last In
-(Head) - (node) - (node) - (Tail) <- (New Node)
-First Out
-<- (Head) (New Head) - (node) - (node) - (Tail - New Node)
+A stack being known as a FILO (First In Last Out) structure and a Queue being known as the FIFO (First In First Out) structure. <br /> 
+Queue <br /> 
+First In...............................Last In <br /> 
+(Head) - (node) - (node) - (Tail) <- (New Node) <br /> 
+First Out <br /> 
+<- (Head) (New Head) - (node) - (node) - (Tail - New Node) <br /> 
 
-Stacks
-First In.............................Last In
-(Head) - (node) - (node) - (Tail) <- (New Node)
-Last Out.............................First Out
-(Head) - (node) - (node) - (Tail) (New Node) ->
+Stacks <br /> 
+First In.............................Last In <br /> 
+(Head) - (node) - (node) - (Tail) <- (New Node) <br /> 
+Last Out.............................First Out <br /> 
+(Head) - (node) - (node) - (Tail) (New Node) -> <br /> 
 
-Nodes 
+Nodes <br /> 
 As seen in the above diagram there are nodes present. Node data structures are items that can be accessed in a single direction of choosing or accessed in both directions by referecncing one another. 
 This can be seen through the node types of Linked Lists, Trees and Graphs. 
 
-Hash 
-The hash function is the last main data structure which uses hash key data referencing. The hash function is primarily used in hash tables for searching and retrieving data. Hash tables are incredibly efficient and are used in most data search programs. 
+Hash <br /> 
+The hash function is the last main data structure which uses hash key data referencing. The hash function is primarily used in hash tables for searching and retrieving data. Hash tables are incredibly efficient and are used in most data search programs. <br /> 
+
+Keys | Hash function | Buckets
+---|---|---
+item1 | -> | 01 - hashNum
+item2 | -> | 05 - hashNum
+item3 | -> | 02 - hashNum
+etc | -> | etc
 
 Class Activity Task 2 - Linked Lists
 Linked Lists 
+
+Singly - Linked lists store data in a specific order depending on the direction the list is going (Head to Tail, Tail to Head). 
+If it is a doubly linked list it goes in both directions. 
+
+For example 
+[HEAD] -> [node[next node]] -> [node[next node (tail)]] -> [tail[null]]
+
+![Linked list Pic](/images/list.png)

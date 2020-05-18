@@ -1,15 +1,15 @@
 // Weekly Repo 19/05/2020
 // Recursion Practice
 
-function number(num) {
-    let total = 1
-    for (let n = num; n > 1; n--) {
-        total = total * n
-    }
-    return total
-}
+// function number(num) {
+//     let total = 1
+//     for (let n = num; n > 1; n--) {
+//         total = total * n
+//     }
+//     return total
+// }
 
-console.log(number(4))
+// console.log(number(4))
 
 
 
@@ -51,13 +51,4 @@ console.log(number(4))
 
 /* --------------------------------------------------------------------*/
 
-// Linked List Code examples
-
-// Node class to create items for our linked lists
-class Node {
-    constructor(data, next = null){
-        this.data = data,
-        this.next = next
-    }
-}
 
