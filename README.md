@@ -33,15 +33,15 @@ Array-like data structure: <br />
 Array-like data structures splits into 2 types. Stacks and Queues. 
 A stack being known as a FILO (First In Last Out) structure and a Queue being known as the FIFO (First In First Out) structure. <br /> 
 Queue <br /> 
-First In...............................Last In <br /> 
+First In....................................Last In <br /> 
 (Head) - (node) - (node) - (Tail) <- (New Node) <br /> 
 First Out <br /> 
 <- (Head) (New Head) - (node) - (node) - (Tail - New Node) <br /> 
 
 Stacks <br /> 
-First In.............................Last In <br /> 
+First In.......................................Last In <br /> 
 (Head) - (node) - (node) - (Tail) <- (New Node) <br /> 
-Last Out.............................First Out <br /> 
+Last Out....................................First Out <br /> 
 (Head) - (node) - (node) - (Tail) (New Node) -> <br /> 
 
 Nodes <br /> 
@@ -58,6 +58,8 @@ item2 | -> | 05 - hashNum
 item3 | -> | 02 - hashNum
 etc | -> | etc
 
+---
+
 Class Activity Task 2 - Linked Lists
 Linked Lists 
 
@@ -68,3 +70,18 @@ For example
 [HEAD] -> [node[next node]] -> [node[next node (tail)]] -> [tail[null]]
 
 ![Linked list Pic](/images/list.png)
+
+Linked lists are really good for storing data in sequential order. In stead of having an index, you have a head, the first node in the list, a tail, the last node in the list and the nodes in between. Each node is linked in one direction. Usually with the attribute of nextNode being the next node in the list. <br />
+
+Creating a linked list is simple. 
+
+The first thing to do would be to create a Node class object. 
+
+```javascript
+class Node {
+    constructor(data, next = null){
+        this.data = data;
+        this.next = next;
+    }
+}
+```
