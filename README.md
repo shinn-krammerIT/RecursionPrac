@@ -60,6 +60,8 @@ etc | -> | etc
 
 ---
 
+
+
 ## Class Activity Task 2 - Linked Lists
 Linked Lists 
 
@@ -119,6 +121,9 @@ class linkedList {
 ```
 
 
+Applications of Linked lists. Linked lists are very useful when applied with stacks or queues. The first thing that comes to mind is a program like spotify queues. 
+You could use a doubly linked list so you can access the next song or previous and also store data like, the album, creator etc. to display. 
+
 
 ---
 
@@ -127,3 +132,10 @@ class linkedList {
 Recursion takes a function and then calls itself until it says otherwise.
 Recursion is great when applied to factorials and recursive mathmatical formualas. It is also very good when searching through linked lists and trees. 
 
+
+
+Applications of recursion used in real life. 
+Recursive projecting
+Recursive modelling
+Recursive formulas
+Factorials
